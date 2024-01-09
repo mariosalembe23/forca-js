@@ -1,0 +1,78 @@
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+} */
+
+.boneco-palito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: linear-gradient(to bottom right, transparent 48%, red 48%, red 52%, transparent 52%);
+}
+
+.cabeca {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.corpo {
+  align-items: center;
+  margin-left: 15px;
+  width: 10px;
+  height: 30px;
+  background-color: black;
+}
+
+.bracos,
+.pernas {
+  display: flex;
+}
+
+.braco,
+.perna {
+  width: 10px;
+  height: 40px;
+  background-color: black;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.braco.esquerdo {
+  transform: rotate(-90deg);
+}
+
+.braco.direito {
+  transform: rotate(90deg);
+}
+
+.perna.esquerda {
+  transform: rotate(-160deg);
+}
+
+.perna.direita {
+  transform: rotate(1600deg);
+}
+
+
+.forca-word {
+  display: flex;
+}
+
+.letter-box {
+  width: 30px;
+  height: 40px;
+  border-bottom: 2px solid black;
+  margin-right: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}

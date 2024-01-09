@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- jsDelivr  -->
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+  <!-- UNPKG -->
+  <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+  <title>Jogo da Forca</title>
+</head>
+<body>
+  <div id="jogo">
+    <input type="text" id="inputTeclado">
+    <h2>Jogo da Forca</h2>
+    <div class="dica">
+      <p><strong>Dica: </strong><span id="dica"></span></p>
+    </div>
+    <div id="palavra-secreta" class="forca-word">
+    </div>
+    <br>
+    <div id="boneco-palito class="boneco-palito">
+      <div style="display: none" id="cabeca" class="cabeca"></div>
+      <div style="display: none" id="corpo" class="corpo"></div>
+      <div class="bracos">
+        <div style="display: none" id="braco esquerdo" class="braco esquerdo"></div>
+        <div style="display: none" id="braco direito" class="braco direito"></div>
+      </div>
+      <div class="pernas">
+        <div style="display: none" id="perna esquerda" class="perna esquerda"></div>
+        <div style="display: none" id="perna direita" class="perna direita"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
