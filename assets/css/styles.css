@@ -1,11 +1,12 @@
-/* body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-} */
-
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600;700 & family= Poppins:wght@100;200; 300;400;500;600;700;800;900 & display=trocar');
+:root{
+  --fontPoppins: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--fontPoppins);
+  /* background-color: #f5f5f5; */
+}
 .boneco-palito {
   display: flex;
   flex-direction: column;

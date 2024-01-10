@@ -1,17 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <!-- jsDelivr  -->
-  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
-  <!-- UNPKG -->
-  <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
-  <title>Jogo da Forca</title>
-</head>
-<body>
-  <div id="jogo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- jsDelivr  -->
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+    <!-- UNPKG -->
+    <script
+      src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"
+      defer
+    ></script>
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <title>Jogo da Forca</title>
+  </head>
+  <body>
+    <main class="mt-12 p-5" id="jogo">
+      <div class="w-full">
+        <header class="text-center">
+          <h1 class="text-zinc-800 text-2xl font-semibold">Jogo da Forca</h1>
+        </header>
+        <div class="input_group max-w-xl grid grid-cols-1 w-full m-auto mt-3">
+          <p class="text-center font-['Inter'] pb-3 text-zinc-600">
+            Advinha Uma Palavra Consoante a Dica.
+          </p>
+          <input
+            type="text"
+            class="md:w-4/5 hidden w-full focus:ring-4 focus:ring-zinc-300 focus:ring-opacity-55 placeholder:text-zinc-500 m-auto px-3 py-3 outline-none ring-zinc-200 ring-2 rounded"
+            placeholder="Comece Escrevendo..."
+            id="inputTeclado"
+          />
+        </div>
+        <div class="dica text-center mt-5">
+          <h6
+            id="dica"
+            class="px-7 ring-4 transition-all ring-zinc-300 py-2 rounded bg-black text-white inline-flex font-medium"
+          ></h6>
+        </div>
+        <div class="numbers_words flex justify-center mt-6">
+          <div id="palavra-secreta" class="forca-word"></div>
+        </div>
+        <div id="boneco-palito" class="boneco-palito mt-6">
+          <div style="display: none" id="cabeca" class="cabeca"></div>
+          <div style="display: none" id="corpo" class="corpo"></div>
+          <div class="bracos">
+            <div
+              style="display: none"
+              id="braco esquerdo"
+              class="braco esquerdo"
+            ></div>
+            <div
+              style="display: none"
+              id="braco direito"
+              class="braco direito"
+            ></div>
+          </div>
+          <div class="pernas">
+            <div
+              style="display: none"
+              id="perna esquerda"
+              class="perna esquerda"
+            ></div>
+            <div
+              style="display: none"
+              id="perna direita"
+              class="perna direita"
+            ></div>
+          </div>
+        </div>
+
+        <footer
+          class="flex items-center justify-between max-w-xl m-auto w-full mt-8"
+        >
+          <div class="flex items-center space-x-2 text-zinc-600">
+            <p id="chances"></p>
+            
+          </div>
+          <button
+            onclick="startAgain()"
+            id="buttonReload"
+            disabled
+            class="text-black disabled:opacity-40 transition-all hover:bg-zinc-300 bg-zinc-200 font-medium px-4 py-2 rounded"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+              />
+            </svg>
+          </button>
+        </footer>
+      </div>
+    </main>
+    <!-- <div id="jogo">
     <input type="text" id="inputTeclado">
     <h2>Jogo da Forca</h2>
     <div class="dica">
@@ -20,19 +110,10 @@
     <div id="palavra-secreta" class="forca-word">
     </div>
     <br>
-    <div id="boneco-palito class="boneco-palito">
-      <div style="display: none" id="cabeca" class="cabeca"></div>
-      <div style="display: none" id="corpo" class="corpo"></div>
-      <div class="bracos">
-        <div style="display: none" id="braco esquerdo" class="braco esquerdo"></div>
-        <div style="display: none" id="braco direito" class="braco direito"></div>
-      </div>
-      <div class="pernas">
-        <div style="display: none" id="perna esquerda" class="perna esquerda"></div>
-        <div style="display: none" id="perna direita" class="perna direita"></div>
-      </div>
+    <div >
+      
     </div>
-  </div>
-</body>
-<script src="script.js"></script>
+  </div> -->
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
