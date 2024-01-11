@@ -72,6 +72,8 @@ const partes = [
 ];
 let chances = partes.length;
 document.getElementById("chances").innerText = `${chances} Tentativas`
+
+
 document.addEventListener("keydown", (event) => {
   tecla = event.key;
   if (/^[a-zA-Z]$/.test(tecla)) {
